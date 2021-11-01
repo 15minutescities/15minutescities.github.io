@@ -1,0 +1,8 @@
+<div id='map' style='width: 100%; height: {{ include.height | default: "300px"}}; margin: 0 auto;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibWFydG9waXgiLCJhIjoiY2t2aDViZTI0MWl2eTJ2bzA3d3Uyb2ZwdCJ9.0lmm_gyXdo1pPOYZlTMZjw';
+  var map = new mapboxgl.Map({
+  container: 'map',
+  style: '{{ include.url }}'
+  });
+</script>
